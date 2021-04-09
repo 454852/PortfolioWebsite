@@ -1,0 +1,159 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="A cool thing made with Glitch" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import the webpage's stylesheet -->
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <button class="menu-toggle"></button>
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li data-text="Welcome">Home</li>
+        </a>
+        <a href="work.html">
+          <li data-text="CS50">Work</li>
+        </a>
+        <a href="aboutme.html">
+          <li data-text="Stephan F">About Me</li>
+        </a>
+      </ul>
+    </nav>
+    <script type="text/javascript">
+      writeRandomQuote = function() {
+        var quotes = new Array();
+        quotes[0] = "Action is the real measure of intelligence.";
+        quotes[1] = "GGWP";
+        quotes[2] = "Talk is cheap show me the code!";
+        quotes[3] =
+          "A good head and a good heart are always a formidable combination.";
+        quotes[4] =
+          "Yesterday is history, tomorrow is a mystery, but today is a gift and that is why it is called the present.";
+        quotes[5] = "To thine own self be true";
+        var rand = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote").innerHTML = quotes[rand];
+      };
+      writeRandomQuote();
+    </script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="container-fluid fonted" id="Webgreet">
+          ABOUT ME STEPHAN FOSTER
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <iframe
+          class="centerimage"
+          id="map"
+          allowfullscreen
+          frameborder="0"
+          width="576"
+          height="360"
+          src="https://maps.google.com/maps?q=collinwood%20ontario&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        ></iframe>
+      </div>
+      <div class="col-sm-4">
+        <div id="details">
+          <h3 id="quote">RANDOM</h3>
+          <h3>
+            <script type="text/javascript">
+              writeRandomQuote();
+            </script>
+
+            <strong>OLB class of 2021!!</strong>
+            I am a member of the computer science class at my highschool and
+            will likely be attending computer engineering at U Waterloo this
+            september.
+          </h3>
+          <h3>
+            My hobbies include playing video games like Counterstrike and more
+            recently playing games likes <strong>AMONG US</strong> with my
+            friends as well as getting frequent exercise through means like
+            running. I live in a semi-small town call Collingwood in Ontario
+            Canada and go to
+            <strong>Our lady of the Bay Catholic Highschool</strong>. Throughout
+            my time in highschool I have been very
+            <strong>academically focused</strong> and I am always looking to
+            succeed in my classes . My favourite classed of highscool have been
+            <strong>Computer Science and Physics</strong> and this is why I am
+            looking to pursue a career where I can use the skills these classes
+            taught me.
+          </h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          <img
+            id="litme"
+            src="https://cdn.glitch.com/173c05ce-95c8-4762-a06d-5011999ec46a%2F4668078.png?v=1617893773023"
+          />\
+          <h3 style="background-color: white;  opacity: 0.6;">This is me!</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="topright">
+      <a href="https://store.steampowered.com/"
+        ><img
+          width="50px"
+          id="steam"
+          src="https://cdn.glitch.com/a8523ae7-6b48-4657-aa8b-dc72cf4663db%2Fkisspng-steam-computer-icons-logo-video-game-valves-5b14dba665b9d0.0333266715280936064167.png?v=1579191514542"
+      /></a>
+      <a href="https://discordapp.com/"
+        ><img
+          width="50px"
+          id="discord"
+          src="https://cdn.glitch.com/a8523ae7-6b48-4657-aa8b-dc72cf4663db%2Fkisspng-computer-icons-discord-logo-judgment-apocalypse-s-discord-5b1fbec2bbfbf0.71774046152880710677.png?v=1579191558375"
+      /></a>
+    </div>
+
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+  </body>
+</html>

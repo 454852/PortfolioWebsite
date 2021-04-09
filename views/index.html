@@ -1,0 +1,218 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="A cool thing made with Glitch" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/reveal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      var images = new Array();
+
+      function preloadImages() {
+        for (i = 0; i < preloadImages.arguments.length; i++) {
+          images[i] = new Image();
+
+          images[i].src = preloadImages.arguments[i];
+        }
+      }
+
+      preloadImages(
+        "https://cdn.glitch.com/173c05ce-95c8-4762-a06d-5011999ec46a%2F6458902_preview.jpg?v=1617942869804"
+      );
+    </script>
+    
+    
+<script type="text/javascript">
+  function showDate() {
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //months are zero based
+    var curr_year = d.getFullYear();
+
+    document.getElementById("date").innerHTML = (curr_date + "-" + curr_month + "-" + curr_year);
+  }
+</script>
+    
+    
+    
+    
+  </head>
+  <body>
+    <button class="menu-toggle"></button>
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li data-text="Welcome">Home</li>
+        </a>
+        <a href="work.html">
+          <li data-text="CS50">Work</li>
+        </a>
+        <a href="aboutme.html">
+          <li data-text="Stephan F">About Me</li>
+        </a>
+      </ul>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-12" id="Webgreet">
+        <h1 class="fonted">WELCOME TO STEPHANS WEBSITE</h1>
+      </div>
+    </div>
+
+    <div style="background-color: white;  opacity: 0.6;">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="centeralign">
+            Use the hamburger menu to toggle to see my work(gists) and the about
+            me page.
+          </h2>
+        </div>
+      </div>
+
+      <h3 class="reveal-text">
+        I created this website to demonstrate my ability for web development in
+        my Gr.12 computer science CCT. You accessed this site on:
+      </h3>
+     
+     
+      <h3 style="text-color: black;" id ="date"></h3>
+       <script type="text/javascript">showDate();</script>
+      <h1 class="reveal-text">
+        Features of this site include:
+      </h1>
+      <h2 class="centeralign">
+        (Click on the topic to learn more.)
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-3" style="background-color:#52708C;">
+        <a href="https://weatherwidget.io/">
+          <h1 class="projectlabel">Widgets</h1>
+        </a>
+      </div>
+
+      <div class="col-sm-3" style="background-color:#61B329;">
+        <a href="https://www.w3schools.com/css/css_navbar.asp">
+          <h1 class="projectlabel">Navbar</h1>
+        </a>
+      </div>
+      <div class="col-sm-3" style="background-color: #ff3232;">
+        <a href="https://www.youtube.com/watch?v=vV28ilGSJGQ">
+          <h1 class="projectlabel">Multiple Pages</h1>
+        </a>
+      </div>
+      <div class="col-sm-3" style="background-color:#61B329;">
+        <a href="https://www.w3schools.com/css/">
+          <h1 class="projectlabel">CSS Styling</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6" style="background-color: #191919;">
+        <a href="https://gist.github.com/discover">
+          <h1 class="projectlabel">Github Gists</h1>
+        </a>
+      </div>
+
+      <div class="col-sm-6" style="background-color:#9370DB;">
+        <a href="https://www.heroku.com/">
+          <h1 class="projectlabel">Heroku Hosted</h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img
+          class="caesar"
+          src="https://cdn.glitch.com/173c05ce-95c8-4762-a06d-5011999ec46a%2F6458902_preview.jpg?v=1617942869804"
+        />
+      </div>
+      <div class="col-sm-8" style="background-color:lavender;">
+        <h1 class="labelbig">Joke that we can now appreciate:</h1>
+        <h2>
+          Q: Why did the programmer quit his job?
+        </h2>
+
+        <h2>
+          A: Because he didnt get arrays.
+        </h2>
+
+        <h2>
+          Now I know this class was worth it.
+        </h2>
+
+        <h2></h2>
+
+        <h2></h2>
+      </div>
+      <div class="col-sm-2" style="background-color:lavender;">
+        <img
+          class="caesar"
+          src="https://cdn.glitch.com/173c05ce-95c8-4762-a06d-5011999ec46a%2F6458902_preview.jpg?v=1617942869804"
+        />
+      </div>
+    </div>
+    
+
+    <footer>
+      <a
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/44d50n80d22/collingwood/"
+        data-label_1="COLLINGWOOD"
+        data-label_2="WEATHER"
+        data-theme="original"
+        >COLLINGWOOD WEATHER</a
+      >
+      <script>
+        !(function(d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://weatherwidget.io/js/widget.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        })(document, "script", "weatherwidget-io-js");
+      </script>
+    </footer>
+  </body>
+</html>
